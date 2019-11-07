@@ -1,0 +1,32 @@
+{
+  "name": "hello-next",
+  "version": "1.0.0",
+  "main": "index.tsx",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start -p %PORT%",
+    "deploy": "./node_modules/.bin/now --prod"
+  },
+  "dependencies": {
+    "awesome-typescript-loader": "^5.2.1",
+    "axios": "^0.19.0",
+    "cross-env": "^6.0.3",
+    "next": "^9.1.1",
+    "now": "^16.4.4",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "source-map-loader": "^0.2.4"
+  },
+  "devDependencies": {
+    "@types/next": "^8.0.6",
+    "@types/node": "^12.12.3",
+    "@types/react": "^16.9.11",
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "prettier": "^1.18.2",
+    "typescript": "^3.6.4"
+  }
+}

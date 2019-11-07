@@ -1,0 +1,31 @@
+### yarn ###
+yarn.lock
+node_modules
+npm-debug.log
+
+### next ###
+.next
+out
+
+### Code ###
+.vscode
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+### react ###
+.DS_*
+*.log
+logs
+**/*.backup.*
+**/*.back.*
+
+node_modules
+bower_componets
+
+*.sublime*
+
+psd
+thumb
+sketch
