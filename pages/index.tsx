@@ -1,4 +1,3 @@
-import axios from 'axios';
 import Layout from '../components/MyLayout';
 import Project from '../components/Project';
 import { getProjects } from '../utils/service';
@@ -30,8 +29,11 @@ const Index = (props: any) => {
 Index.getInitialProps = async ({ req }: any) => {
   const userAgent = req ? req.headers['user-agent'] || '' : navigator.userAgent;
 
+  // Dynamic import / LazyLoad Axios
+  const axiosStatic = await import('axios');
+  const axios = axiosStatic.default;
   const res = await axios.get('https://api.tvmaze.com/search/shows?q=batman');
-  const data = await res.data;
+  const data: [] = await res.data;
 
   console.log(`Show data fetched. Count: ${data.length}`);
 
